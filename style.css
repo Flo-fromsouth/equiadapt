@@ -85,6 +85,7 @@
     align-content: stretch;
     font-size: larger;
     list-style: none;
+
 }
 
 .navbar li a {
@@ -92,7 +93,37 @@
     text-decoration: none;
 }
 
-/* fin du header_ tout ce qui est au dessus reste identique à chaque page*/
+.submenu {
+    text-decoration: none;
+    list-style: none;
+    display: none;
+    z-index: 1000;
+
+}
+
+.navbar li:hover .submenu {
+    display: inline-block;
+    left: 20px;
+    position: absolute;
+    z-index: 1000;
+}
+
+li a:hover {
+    color: #DEA479;
+}
+
+/* fin du header_ tout ce qui est au dessus reste identique sur chaque page*/
+
+/*page index   ACCUEIL  */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
 
 .rectangle_orange {
     background-color: #DEA479;
@@ -108,26 +139,30 @@
     color: white;
     font-size: larger;
     text-align: center;
-    padding: 50px;
+    padding-bottom: 20px;
+}
 
+.bandeau_img {
+    padding-bottom: 20px;
 }
 
 .linda_garcia {
     font-size: xx-large;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .sous-titre {
     font-size: x-large;
+    padding: 30px;
 }
 
 .lieux {
     background-color: #DEA479;
     color: white;
-    padding: 50px;
     font-size: xx-large;
     font-weight: bold;
     text-align: center;
+    padding-top: 50px;
 }
 
 .secteurs {
@@ -170,4 +205,182 @@
     padding: 20px;
     font-size: large;
     font-weight: bold;
+}
+
+.footer {
+    padding: 30px;
+    background-color: #DEA479;
+    color: white;
+}
+
+
+/* page Qui suis-je? -  PAGE 2*/
+
+.rectangle_bordeaux_qui_suis_je {
+    background-color: #8F4343;
+
+}
+
+.image_et_formation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.formation {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 120%;
+    padding-left: 90px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.texte {
+    color: white;
+    font-size: large;
+    line-height: 150%;
+    padding: 70px;
+}
+
+.bloc_philo_image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.maphilo_bloc_texte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+
+}
+
+.ma_philo_titre {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 200;
+    padding: 50px;
+    text-align: center;
+}
+
+.ma_philo_texte {
+    color: white;
+    font-size: large;
+    line-height: 180%;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+
+.secteurs_activite_titre {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 200;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.secteurs_activite {
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+
+.ma_philo_image {
+    padding-top: 50px;
+}
+
+.footer {
+    background-color: #DEA479;
+    color: white;
+}
+
+
+/* fin page 2 - qui suis-je? */
+
+/* Page 3 : L'équithérapie Qu'est ce que c'est */
+
+.rectangle_bordeaux_what {
+    background-color: #8F4343;
+    padding-bottom: 100px;
+}
+
+.image_et_what {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+}
+
+.titre_what {
+    color: white;
+    font-size: xx-large;
+    font-weight: 200;
+    line-height: 120%;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 150px;
+    text-align: center;
+
+}
+
+.texte_what {
+    color: white;
+    font-size: large;
+    line-height: 150%;
+    padding: 70px;
+}
+
+
+/* fin page 3 - ql'équithérapie, qu'est ce que c'est? */
+
+/* Page  : Pourquoi faire de l'équithérapie? */
+
+.rectangle_bordeaux_why {
+    background-color: #8F4343;
+    padding-bottom: 100px;
+}
+
+.image_et_why {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+}
+
+.titre_why {
+    color: white;
+    font-size: xx-large;
+    font-weight: 200;
+    line-height: 120%;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 150px;
+    text-align: center;
+
+}
+
+.texte_why {
+    color: white;
+    font-size: large;
+    line-height: 150%;
+    padding: 70px;
 }
