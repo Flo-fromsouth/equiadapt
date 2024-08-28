@@ -4,7 +4,7 @@
 
 /*version mobile*/
 
-@media (max-width : 499px) {
+@media (max-width : 599px) {
 
     .container {
         width: 50%;
@@ -49,7 +49,7 @@
     .menu_container {
         width: 50%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: stretch;
@@ -58,22 +58,23 @@
     }
 
     .icone_liste {
-        padding: 30px;
-        margin: 30px;
+        display: flex;
+        padding: 65px;
+        margin: none;
+        font-size: 2rem;
+        color: #8F4343;
     }
 
     .logo {
-        width: 20%;
-        padding-left: 40px;
-        margin-left: 20px;
-
+        padding-left: 10px;
+        margin-left: 10px;
     }
 
 
     .menu_container_droit {
+        display: none;
         width: 75%;
         padding: 20px;
-
     }
 
     .logo_name {
@@ -107,7 +108,7 @@
     }
 
     .navbar li:hover .submenu {
-        display: inline-block;
+        display: none;
         left: 20px;
         position: absolute;
         z-index: 1000;
@@ -173,28 +174,33 @@
     .secteurs {
         background-color: #DEA479;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: stretch;
         align-content: stretch;
         padding: 60px;
+        text-align: center;
+
     }
 
     .fanthilou {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: stretch;
         align-content: stretch;
+        margin-bottom: 20px;
     }
 
     .adresse_fanthilou {
-        padding: 20px;
-        padding-top: 30px;
+
         font-size: large;
         font-weight: bold;
+        margin-top: 10px;
+
+
     }
 
     .equiway {
@@ -207,15 +213,18 @@
     }
 
     .adresse_equiway {
-        padding: 20px;
+
         font-size: large;
         font-weight: bold;
+        margin-top: 10px;
     }
 
     .footer {
-        padding: 30px;
+
         background-color: #DEA479;
         color: white;
+        padding: 30px;
+        text-align: center;
     }
 
 
@@ -310,6 +319,7 @@
     .footer {
         background-color: #DEA479;
         color: white;
+        width: 87%;
     }
 
 
@@ -395,7 +405,7 @@
 
 /*version desktop*/
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     .container {
         width: 100%;
     }
@@ -458,12 +468,6 @@
         display: none;
     }
 
-    .menu_container_droit {
-        width: 75%;
-        padding: 20px;
-
-    }
-
     .logo_name {
         font-size: xx-large;
         font-weight: bold;
@@ -471,6 +475,12 @@
         margin-top: 30PX;
         margin-bottom: 80px;
         margin-left: 310px;
+    }
+
+    .menu_container_droit {
+        width: 75%;
+        padding: 20px;
+
     }
 
     .navbar {
@@ -483,7 +493,12 @@
         align-content: stretch;
         font-size: larger;
         list-style: none;
+        text-align: center;
 
+    }
+
+    .navbar li {
+        position: relative;
     }
 
     .navbar li a {
@@ -491,23 +506,23 @@
         text-decoration: none;
     }
 
+    li a:hover {
+        color: #DEA479;
+    }
+
     .submenu {
         text-decoration: none;
         list-style: none;
         display: none;
-        z-index: 1000;
-
+        background-color: white;
+        padding: 30px;
+        margin: 20px;
     }
 
     .navbar li:hover .submenu {
         display: inline-block;
-        left: 20px;
         position: absolute;
-        z-index: 1000;
-    }
-
-    li a:hover {
-        color: #DEA479;
+        left: 0px;
     }
 
     /* fin du header_ tout ce qui est au dessus reste identique sur chaque page*/

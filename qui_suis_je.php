@@ -23,12 +23,12 @@ include 'container_navbar.php';
                     Animatrice d’équitation diplômée d état (FFE).</div>
             </div>
             <div class="texte">
-                Forte de dix années d'expérience en tant que soignante, J’ai acquis une solide expertise dans le domaine
-                des soins de santé. Cette expérience m’ a permis de développer des compétences exceptionnelles en
+                Forte de dix années d'expérience en tant que soignante, J’ai acquis une expertise dans le domaine
+                des soins de santé. Cette expérience m’ a permis de développer des compétences en
                 matière de soins aux patients, de compréhension des besoins individuels et de gestion des situations
                 délicates.
                 <br><br>
-                Je suis titulaire d'un diplôme d'État, garantissant un haut niveau de connaissances théoriques et
+                Je suis titulaire d'un diplôme d'État, garantissant un niveau de connaissances théoriques et
                 pratiques dans le domaine médical. Passionnée par les chevaux et convaincue des bienfaits thérapeutiques
                 de l'équitation, j’ai également un diplôme d'animatrice d'équitation. Cette formation me permet de
                 combiner mes compétences en soins de santé avec une approche thérapeutique basée sur l'équitation.

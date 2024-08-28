@@ -8,22 +8,24 @@
 </div>
 <div class="menu_container">
     <div class="logo"><img src="logos/logo_officiel.jpg" alt="logo"></div>
+    <div class="icone_liste"><i class="fa-solid fa-bars"></i></div>
     <div class="menu_container_droit">
         <div class="logo_name">EQUI'ADAPT</div>
         <ul class="navbar">
             <li><a href="index.php">Accueil</a></li>
             <li><a href="qui_suis_je.php">Qui suis-je?</a></li>
-            <li style="text-align: center; position:relative"><a href="equitherapie_what.php">Médiation
+            <li><a href="equitherapie_what.php">Médiation
                     équine<br>Equithérapie<br>Equitation
                     adaptée</a>
                 <ul class="submenu">
+                    _______<br><br>
                     <li><a href="equitherapie_what.php">Qu'est ce que l'équithérapie?</a></li>
+                    _______<br><br>
                     <li><a href="equitherapie_why.php">Pourquoi faire de l'équithérapie?</a></li>
                 </ul>
             </li>
             <li><a href="actualites.php">Actualités</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
-        <div class="icone_liste"><i class="fa-solid fa-bars"></i></div>
     </div>
 </div>
