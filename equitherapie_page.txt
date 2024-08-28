@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php
+include 'header.php';
+?>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="infos">
+                <div class="icone_tel"><img src="icones/icone_telephone_2.jpg"></div>
+                <div class="tel">06 60 23 20 50</div>
+                <div class="enveloppe"><img src="icones/enveloppe2.jpg"></div>
+                <div class="facebook"><img src="icones/logo_facebook_rond.jpg"></div>
+            </div>
+        </div>
+        <div class="menu_container">
+            <div class="logo"><img src="logos/logo_officiel.jpg" alt="logo"></div>
+            <div class="menu_container_droit">
+                <div class="logo_name">EQUI'ADAPT</div>
+                <ul class="navbar">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="qui_suis_je.html">Qui suis-je?</a></li>
+                    <li style="text-align: center"><a href="equitherapie.html">Médiation
+                            équine<br>Equithérapie<br>Equitation
+                            adaptée</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rectangle_orange">
+            <div class="accroche">Qui suis-je?</div>
+        </div>
+        <div class=" rectangle_bordeaux_qui_suis_je">
+            <div class="image_et_formation">
+                <div class="image_qui_suis_je">
+                    <img src="images/Image_quisuisje.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

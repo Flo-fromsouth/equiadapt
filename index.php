@@ -1,49 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Equiadapt - equithérapie, médiation équine et équitation adaptée</title>
-</head>
+<?php
+include 'header.php';
+include 'container_navbar.php';
+?>
 
 <body>
     <div class="container">
-        <div class="header">
-            <div class="infos">
-                <div class="icone_tel"><img src="icones/icone_telephone_2.jpg"></div>
-                <div class="tel">06 60 23 20 50</div>
-                <div class="enveloppe"><img src="icones/enveloppe2.jpg"></div>
-                <div class="facebook"><img src="icones/logo_facebook_rond.jpg"></div>
-            </div>
-        </div>
-        <div class="menu_container">
-            <div class="logo"><img src="logos/logo_officiel.jpg" alt="logo"></div>
-            <div class="menu_container_droit">
-                <div class="logo_name">EQUI'ADAPT</div>
-                <ul class="navbar">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="qui_suis_je.html">Qui suis-je?</a></li>
-                    <li style="text-align: center; position:relative"><a href="equitherapie.html">Médiation
-                            équine<br>Equithérapie<br>Equitation
-                            adaptée</a>
-                        <ul class="submenu">
-                            <li><a href="equitherapie_what.html">Qu'est ce que l'équithérapie?</a></li>
-                            <li><a href="equitherapie_why.html">Pourquoi faire de l'équithérapie?</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="actualites.html">Actualités</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
     <div class="body">
         <div class="rectangle_orange">
             <div class="accroche">Le Cheval, une influence positive sur notre santé</div>
         </div>
-        <div class=" rectangle_bordeaux">
+        <div class="rectangle_bordeaux">
             <div class="bandeau_img">
                 <div class="bandeau_entier"><img src="images/bandeau_entier.jpg" alt="images"></div>
             </div>
