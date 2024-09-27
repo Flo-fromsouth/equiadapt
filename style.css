@@ -1,5 +1,5 @@
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif
 }
 
 /*version mobile*/
@@ -7,8 +7,9 @@
 @media (max-width : 599px) {
 
     .container {
-        width: 50%;
+        width: 100%;
     }
+
 
     .infos {
 
@@ -57,22 +58,51 @@
 
     }
 
-    .icone_liste {
+    .menu_mobile_logo_liste {
         display: flex;
-        padding: 65px;
-        margin: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .icone_liste {
+        box-sizing: border-box;
+        padding-left: 60px;
+        padding-top: 110px;
         font-size: 2rem;
         color: #8F4343;
     }
 
+    .icone_liste_menu {
+        display: none;
+        position: fixed;
+        list-style-type: none;
+        background-color: white;
+        font-size: large;
+        line-height: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .icone_liste_menu li {
+        position: relative;
+    }
+
+    .icone_liste_menu a {
+        text-decoration: none;
+        color: black;
+    }
+
     .logo {
-        padding-left: 10px;
-        margin-left: 10px;
+        padding-left: none;
+        margin-left: none;
     }
 
 
     .menu_container_droit {
-        display: none;
+        display: flex;
         width: 75%;
         padding: 20px;
     }
@@ -84,14 +114,13 @@
     .navbar {
         font-weight: 500;
         display: none;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: stretch;
         align-content: stretch;
         font-size: larger;
         list-style: none;
-
     }
 
     .navbar li a {
@@ -102,16 +131,12 @@
     .submenu {
         text-decoration: none;
         list-style: none;
-        display: none;
-        z-index: 1000;
-
+        display: flex;
     }
 
     .navbar li:hover .submenu {
-        display: none;
-        left: 20px;
-        position: absolute;
-        z-index: 1000;
+        display: flex;
+        left: 0px;
     }
 
     li a:hover {
@@ -122,14 +147,7 @@
 
     /*page index   ACCUEIL  */
 
-    .body {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: stretch;
-    }
+
 
     .rectangle_orange {
         background-color: #DEA479;
@@ -139,6 +157,11 @@
         font-size: xx-large;
     }
 
+    .accroche {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .rectangle_bordeaux {
         background-color: #8F4343;
@@ -149,12 +172,25 @@
     }
 
     .bandeau_img {
-        padding-bottom: 20px;
+        display: none;
+    }
+
+    .image_version_mobile_accueil {
+        background-image: url(images/selena_version_mobile.jpg);
+        background-size: cover;
+        padding: 40%;
+    }
+
+    .texte {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .linda_garcia {
         font-size: xx-large;
         font-weight: bold;
+        padding-top: 30px;
     }
 
     .sous-titre {
@@ -181,7 +217,6 @@
         align-content: stretch;
         padding: 60px;
         text-align: center;
-
     }
 
     .fanthilou {
@@ -195,12 +230,9 @@
     }
 
     .adresse_fanthilou {
-
         font-size: large;
         font-weight: bold;
         margin-top: 10px;
-
-
     }
 
     .equiway {
@@ -210,58 +242,81 @@
         justify-content: space-evenly;
         align-items: stretch;
         align-content: stretch;
+        padding-top: 20px;
     }
 
     .adresse_equiway {
-
         font-size: large;
         font-weight: bold;
         margin-top: 10px;
     }
 
     .footer {
-
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
         background-color: #DEA479;
         color: white;
-        padding: 30px;
         text-align: center;
     }
 
 
     /* page Qui suis-je? -  PAGE 2*/
 
+
+    .rectangle_orange {
+        background-color: #DEA479;
+        padding: 35px;
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+    }
+
     .rectangle_bordeaux_qui_suis_je {
         background-color: #8F4343;
-
+        color: white;
+        font-size: larger;
+        text-align: center;
+        padding: 0px;
     }
 
     .image_et_formation {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
     }
 
+    .image_qui_suis_je {
+        display: none;
+    }
+
+    .image_qui_version_mobile {
+        background-image: url(images/Image_qui_version_mobile.jpg);
+        padding: 160px;
+    }
+
     .formation {
         color: white;
-        font-size: 1.8rem;
-        font-weight: 200;
-        line-height: 120%;
-        padding-left: 90px;
-        padding-top: 80px;
+        font-size: x-large;
+        line-height: 130%;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 30px;
         text-align: center;
     }
 
-    .texte {
+    .texte_presentation {
         color: white;
         font-size: large;
-        line-height: 150%;
-        padding: 70px;
+        line-height: 130%;
+        padding: 30px;
     }
 
-    .bloc_philo_image {
+    .bloc_philo {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -277,31 +332,30 @@
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
-
-
     }
 
     .ma_philo_titre {
         color: white;
         font-size: 1.8rem;
         font-weight: 200;
-        padding: 50px;
+        padding: 10px;
         text-align: center;
     }
 
     .ma_philo_texte {
         color: white;
         font-size: large;
-        line-height: 180%;
-        padding-left: 80px;
-        padding-right: 40px;
+        line-height: 130%;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
     }
 
     .secteurs_activite_titre {
         color: white;
         font-size: 1.8rem;
         font-weight: 200;
-        padding-top: 80px;
+        padding-top: 50px;
         text-align: center;
     }
 
@@ -311,16 +365,17 @@
         text-align: center;
     }
 
-
     .ma_philo_image {
-        padding-top: 50px;
+        display: none;
     }
 
     .footer {
         background-color: #DEA479;
         color: white;
-        width: 87%;
+        padding: 30px;
+        text-align: center;
     }
+
 
 
     /* fin page 2 - qui suis-je? */
@@ -339,32 +394,38 @@
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
+    }
 
+    .image_what {
+        display: none;
+    }
+
+    .image_what_2 {
+        display: none;
     }
 
     .titre_what {
         color: white;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: 200;
-        line-height: 120%;
-        padding-left: 180px;
-        padding-right: 180px;
-        padding-top: 150px;
+        padding-top: 70px;
+        padding-left: 150px;
+        padding-right: 70px;
         text-align: center;
-
     }
 
     .texte_what {
         color: white;
         font-size: large;
         line-height: 150%;
-        padding: 70px;
+        padding: 20px;
+        text-align: center;
     }
 
 
-    /* fin page 3 - ql'équithérapie, qu'est ce que c'est? */
+    /* fin page 3 - l'équithérapie, qu'est ce que c'est? */
 
-    /* Page  : Pourquoi faire de l'équithérapie? */
+    /* Page 4 : Pourquoi faire de l'équithérapie? */
 
     .rectangle_bordeaux_why {
         background-color: #8F4343;
@@ -378,28 +439,121 @@
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
+    }
 
+    .image_why {
+        display: none;
+    }
+
+    .image_why_2 {
+        display: none;
     }
 
     .titre_why {
         color: white;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: 200;
-        line-height: 120%;
-        padding-left: 180px;
-        padding-right: 180px;
-        padding-top: 150px;
+        padding-top: 70px;
+        padding-left: 90px;
+        padding-right: 70px;
         text-align: center;
-
     }
 
     .texte_why {
         color: white;
         font-size: large;
         line-height: 150%;
-        padding: 70px;
+        padding: 20px;
+        text-align: center;
     }
 
+
+
+    /* fin page 4 - Pourquoi faire de l'équithérapie? */
+
+    /* Page 5 : séjours & tarifs */
+
+    .rectangle_bordeaux_tarifs {
+        background-color: #8F4343;
+        padding-bottom: 100px;
+    }
+
+    .honoraires {
+        color: white;
+        font-size: x-large;
+        font-weight: 200;
+        padding-top: 70px;
+        padding-left: 70px;
+        padding-right: 70px;
+        text-align: center;
+    }
+
+    .image_tarifs {
+        display: none;
+    }
+
+    .tarifs_texte {
+        color: white;
+        font-size: large;
+        line-height: 150%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* fin page 5 - séjours adaptés & tarifs */
+
+    /* Page 6 : contact */
+
+    .rectangle_bordeaux_contact {
+        background-color: #8F4343;
+        padding-bottom: 100px;
+    }
+
+    .texte_contact {
+        color: white;
+        font-size: x-large;
+        font-weight: 200;
+        padding-top: 70px;
+        padding-left: 70px;
+        padding-right: 70px;
+        text-align: center;
+    }
+
+    .garçon_brosse_evita {
+        display: none;
+    }
+
+    .linda_champ_avec_evita {
+        display: none;
+    }
+
+    .filles_de_dos {
+        display: none;
+    }
+
+    .formulaire {
+        text-align: center;
+        color: white;
+        padding-top: 30px;
+        font-size: 1.2rem;
+    }
+
+    .fieldset {
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #submitbutton {
+        background-color: #DEA479;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: large;
+        font-weight: bold;
+        color: white;
+        border: none;
+
+    }
 }
 
 
@@ -417,7 +571,6 @@
     }
 
     .infos {
-
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -454,7 +607,6 @@
         justify-content: space-around;
         align-items: stretch;
         align-content: stretch;
-
     }
 
     .logo {
@@ -494,7 +646,6 @@
         font-size: larger;
         list-style: none;
         text-align: center;
-
     }
 
     .navbar li {
@@ -523,6 +674,12 @@
         display: inline-block;
         position: absolute;
         left: 0px;
+    }
+
+    .bandeau_img {
+        background-image: url("images/bandeau_entier.jpg");
+        background-size: cover;
+        padding: 15%;
     }
 
     /* fin du header_ tout ce qui est au dessus reste identique sur chaque page*/
@@ -557,11 +714,21 @@
 
     .bandeau_img {
         padding-bottom: 20px;
+        display: flex;
+    }
+
+    .image_version_mobile_accueil {
+        display: none;
+    }
+
+    .texte {
+        padding: 20px;
     }
 
     .linda_garcia {
         font-size: xx-large;
         font-weight: bold;
+        padding: 30px;
     }
 
     .sous-titre {
@@ -621,9 +788,13 @@
     }
 
     .footer {
-        padding: 30px;
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
         background-color: #DEA479;
         color: white;
+        text-align: center;
     }
 
 
@@ -643,47 +814,45 @@
         align-content: stretch;
     }
 
+    .image_qui_version_mobile {
+        display: none;
+    }
+
     .formation {
         color: white;
-        font-size: 1.8rem;
+        font-size: x-large;
         font-weight: 200;
-        line-height: 120%;
-        padding-left: 90px;
-        padding-top: 80px;
+        line-height: 130%;
+        padding-left: 150px;
+        padding-top: 50px;
         text-align: center;
     }
 
-    .texte {
+    .texte_presentation {
         color: white;
         font-size: large;
+        font-weight: 200;
         line-height: 150%;
         padding: 70px;
+        text-align: center;
     }
 
-    .bloc_philo_image {
+
+    .bloc_philo {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: stretch;
-    }
-
-    .maphilo_bloc_texte {
-        display: flex;
-        flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
-
-
+        padding-left: 100px;
     }
+
 
     .ma_philo_titre {
         color: white;
-        font-size: 1.8rem;
-        font-weight: 200;
+        font-size: x-large;
+        font-weight: 150;
         padding: 50px;
         text-align: center;
     }
@@ -691,16 +860,18 @@
     .ma_philo_texte {
         color: white;
         font-size: large;
-        line-height: 180%;
+        line-height: 130%;
         padding-left: 80px;
         padding-right: 40px;
+        text-align: center;
     }
 
     .secteurs_activite_titre {
         color: white;
-        font-size: 1.8rem;
-        font-weight: 200;
+        font-size: x-large;
+        font-weight: 150;
         padding-top: 80px;
+        padding-bottom: 50px;
         text-align: center;
     }
 
@@ -713,6 +884,7 @@
 
     .ma_philo_image {
         padding-top: 50px;
+        padding-left: 200px;
     }
 
     .footer {
@@ -737,7 +909,14 @@
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
+    }
 
+    .image_what {
+        display: block;
+    }
+
+    .image_what_2 {
+        display: block;
     }
 
     .titre_what {
@@ -745,11 +924,10 @@
         font-size: xx-large;
         font-weight: 200;
         line-height: 120%;
-        padding-left: 180px;
-        padding-right: 180px;
+        padding-left: 150px;
+        padding-right: 120px;
         padding-top: 150px;
         text-align: center;
-
     }
 
     .texte_what {
@@ -776,7 +954,14 @@
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
+    }
 
+    .image_why {
+        display: block;
+    }
+
+    .image_why_2 {
+        display: block;
     }
 
     .titre_why {
@@ -788,7 +973,6 @@
         padding-right: 180px;
         padding-top: 150px;
         text-align: center;
-
     }
 
     .texte_why {
@@ -798,4 +982,98 @@
         padding: 70px;
     }
 
+    .facebook_insta {
+        color: white;
+        font-size: xx-large;
+        padding-left: 190px;
+        text-align: center;
+    }
+
+    /* fin page 4 - pourquoi faire de l'équithérapie? */
+
+    /* Page 5 : séjours adaptés & tarifs */
+
+    .rectangle_bordeaux_tarifs {
+        background-color: #8F4343;
+        padding-bottom: 100px;
+    }
+
+    .image_page_tarifs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .image_tarifs {
+        display: block;
+    }
+
+    .honoraires {
+        color: white;
+        font-size: xx-large;
+        font-weight: 200;
+        line-height: 120%;
+        padding-left: 180px;
+        padding-right: 30px;
+        padding-top: 120px;
+        text-align: center;
+    }
+
+    /* fin page 5 - tarifs & séjours adaptés */
+
+    /* Page 6 : contact & actualités */
+
+
+    .rectangle_bordeaux_contact {
+        background-color: #8F4343;
+        padding-bottom: 100px;
+
+    }
+
+    .image_contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .texte_contact {
+        color: white;
+        font-size: xx-large;
+        font-weight: 200;
+        line-height: 120%;
+        text-align: center;
+        padding-left: 160px;
+        padding-top: 120px;
+    }
+
+    .formulaire {
+        text-align: center;
+        color: white;
+        margin-top: 40px;
+        padding-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .fieldset {
+        color: white;
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+
+    #submitbutton {
+        background-color: #DEA479;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: x-large;
+        font-weight: bold;
+        color: white;
+        border: none;
+
+    }
 }

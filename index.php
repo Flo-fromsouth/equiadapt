@@ -3,31 +3,31 @@
 
 <?php
 include 'header.php';
-include 'container_navbar.php';
 ?>
 
 <body>
     <div class="container">
-    </div>
-    <div class="body">
+
+        <?php
+        include 'container_navbar.php';
+        ?>
         <div class="rectangle_orange">
             <div class="accroche">Le Cheval, une influence positive sur notre santé</div>
         </div>
         <div class="rectangle_bordeaux">
-            <div class="bandeau_img">
-                <div class="bandeau_entier"><img src="images/bandeau_entier.jpg" alt="images"></div>
-            </div>
+            <div class="bandeau_img"></div>
+            <div class="image_version_mobile_accueil"></div>
             <div class="texte">
-                <br>
                 <div class="linda_garcia">Linda Garcia</div>
-                <div class="sous-titre">Equitation et médiation équine adaptée pour tous
-                    <br><br>
+                <div class="sous-titre">
+                    * * *<br><br>
+                    Equitation et médiation équine adaptée pour tous<br>
                     Ateliers autour des sens, de l’équilibre et de la motricité.<br>
                     Ateliers de médiation équine pour les adultes et les enfants.<br>
-                    Travail sur la concentration, la communication et les émotions
+                    Travail sur la concentration, la communication et les émotions<br>
                     Développement personnel et confiance en soi. <br>
                     Soutien psychologique et dynamisation du moral.
-                    <br><br>
+                    <br><br><br>
                     * * *
                 </div>
             </div>
@@ -47,8 +47,10 @@ include 'container_navbar.php';
                 </div>
             </div>
         </div>
+        <?php
+        include 'footer.php';
+        ?>
     </div>
-    <div class="footer">numero de siret : </div>
 </body>
 
 </html>
