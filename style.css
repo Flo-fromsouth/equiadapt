@@ -467,6 +467,17 @@
         text-align: center;
     }
 
+    .Bienfaits_equitherapie_titre {
+        font-size: xx-large;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .picture_why_2 {
+        display: none;
+    }
+
 
 
     /* fin page 4 - Pourquoi faire de l'équithérapie? */
@@ -568,6 +579,11 @@
         background-color: #8F4343;
         padding: 10px;
         color: white;
+    }
+
+    .connexion {
+        display: flex;
+        padding: 20px;
     }
 
     .infos {
@@ -676,11 +692,7 @@
         left: 0px;
     }
 
-    .bandeau_img {
-        background-image: url("images/bandeau_entier.jpg");
-        background-size: cover;
-        padding: 15%;
-    }
+
 
     /* fin du header_ tout ce qui est au dessus reste identique sur chaque page*/
 
@@ -715,6 +727,12 @@
     .bandeau_img {
         padding-bottom: 20px;
         display: flex;
+    }
+
+    .bandeau_img {
+        background-image: url(images/bandeau_entier.jpg);
+        background-size: cover;
+        padding: 8%;
     }
 
     .image_version_mobile_accueil {
@@ -924,7 +942,7 @@
         font-size: xx-large;
         font-weight: 200;
         line-height: 120%;
-        padding-left: 150px;
+        padding-left: 250px;
         padding-right: 120px;
         padding-top: 150px;
         text-align: center;
@@ -938,7 +956,7 @@
     }
 
 
-    /* fin page 3 - ql'équithérapie, qu'est ce que c'est? */
+    /* fin page 3 - l'équithérapie, qu'est ce que c'est? */
 
     /* Page  : Pourquoi faire de l'équithérapie? */
 
@@ -982,10 +1000,13 @@
         padding: 70px;
     }
 
-    .facebook_insta {
-        color: white;
+    .Bienfaits_equitherapie_titre {
         font-size: xx-large;
-        padding-left: 190px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .picture_why_2 {
         text-align: center;
     }
 
@@ -1022,9 +1043,18 @@
         text-align: center;
     }
 
+    .tarifs_texte {
+        color: white;
+        font-size: xx-large;
+        line-height: 150%;
+        padding: 20px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
     /* fin page 5 - tarifs & séjours adaptés */
 
-    /* Page 6 : contact & actualités */
+    /* Page 6 : contact */
 
 
     .rectangle_bordeaux_contact {
@@ -1048,14 +1078,14 @@
         font-weight: 200;
         line-height: 120%;
         text-align: center;
-        padding-left: 160px;
-        padding-top: 120px;
+        padding-left: 90px;
+        padding-top: 70px;
     }
 
     .formulaire {
         text-align: center;
         color: white;
-        margin-top: 40px;
+        margin-top: 80px;
         padding-top: 20px;
         font-size: 1.5rem;
     }

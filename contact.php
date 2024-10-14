@@ -9,7 +9,7 @@ include 'container_navbar.php';
 <body>
     <div class="container">
         <div class="rectangle_orange">
-            <div class="accroche">Contact & actualités</div>
+            <div class="accroche">Contact</div>
         </div>
         <div class="rectangle_bordeaux_contact">
             <div class="image_contact">
@@ -22,8 +22,12 @@ include 'container_navbar.php';
                 <div class="filles_de_dos">
                     <img src="images/2_filles_dos.jpg">
                 </div>
-                <div class="texte_contact">
-                    Retrouvez moi sur<br>Facebook et Instagram<br><br>***
+                <div class="texte_contact">Contactez moi en remplissant<br>
+                    le formulaire ci dessous<br><br>
+                    Par téléphone au 06 60 23 20 50<br>
+                    ou mail à<br>
+                    equilibrenaturelsante@gmail.com<br><br>
+                    ***
                 </div>
             </div>
             <div class="formulaire">

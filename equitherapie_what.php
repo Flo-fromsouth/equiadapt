@@ -16,10 +16,10 @@ include 'container_navbar.php';
         <div class=" rectangle_bordeaux_what">
             <div class="image_et_what">
                 <div class="image_what">
-                    <img src="images/3_garcon.jpg">
+                    <img src="images/cheval_tete_caresse.jpg">
                 </div>
                 <div class="image_what_2">
-                    <img src="images/gp_selena_cheval_blanc.jpg">
+                    <img src="images/linda_patient_fauteuil.jpg">
                 </div>
                 <div class="titre_what">L'équithérapie,<br>qu'est-ce que c'est?<br><br>***<br></div>
             </div>

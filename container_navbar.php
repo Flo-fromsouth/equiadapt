@@ -1,8 +1,9 @@
 <div class="header">
+    <input class="connexion" type="button" value="connexion">
     <div class="infos">
         <div class="icone_tel"><img src="icones/icone_telephone_2.jpg"></div>
         <div class="tel">06 60 23 20 50</div>
-        <div class="enveloppe"><a href="mailto:florencetruau@gmail.com" target="_blank"><img src="icones/enveloppe2.jpg"></a></div>
+        <div class="enveloppe"><a href="mailto:equilibrenaturelsante@gmail.com" target="_blank"><img src="icones/enveloppe2.jpg"></a></div>
         <div class="facebook"><a href="https://www.facebook.com/mediationparlecheval" target="_blank"><img src="icones/logo_facebook_rond.jpg"></a></div>
     </div>
 </div>
