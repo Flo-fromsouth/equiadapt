@@ -650,6 +650,8 @@
 
     .menu_container {
         width: 100%;
+        background-color: white;
+        color: black;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
