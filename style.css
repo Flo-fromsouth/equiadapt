@@ -10,6 +10,15 @@
         width: 100%;
     }
 
+    .connexion {
+        background-color: #DEA479;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: medium;
+        font-weight: bold;
+        color: white;
+        border: none;
+    }
 
     .infos {
 
@@ -39,6 +48,10 @@
     .facebook {
         padding-top: 15px;
         margin-right: 40px;
+    }
+
+    .instagram {
+        padding-top: 15px;
     }
 
     .header {
@@ -579,11 +592,26 @@
         background-color: #8F4343;
         padding: 10px;
         color: white;
+        border: black 2px solid;
+
     }
 
     .connexion {
         display: flex;
-        padding: 20px;
+        padding: 5px;
+        background-color: #DEA479;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: medium;
+        font-weight: bold;
+        color: white;
+        border: none;
+        border: black 2px solid;
+
+    }
+
+    .bouton_connexion {
+        padding-right: 10px;
     }
 
     .infos {
@@ -593,6 +621,7 @@
         justify-content: flex-end;
         align-items: stretch;
         align-content: flex-end;
+        border: black 2px solid;
     }
 
     .icone_tel {
@@ -615,6 +644,10 @@
         margin-right: 40px;
     }
 
+    .instagram {
+        padding-top: 15px;
+    }
+
     .menu_container {
         width: 100%;
         display: flex;
@@ -623,6 +656,8 @@
         justify-content: space-around;
         align-items: stretch;
         align-content: stretch;
+        border: black 2px solid;
+
     }
 
     .logo {
@@ -662,6 +697,8 @@
         font-size: larger;
         list-style: none;
         text-align: center;
+        border: black 2px solid;
+
     }
 
     .navbar li {
@@ -684,6 +721,8 @@
         background-color: white;
         padding: 30px;
         margin: 20px;
+        border: black 2px solid;
+
     }
 
     .navbar li:hover .submenu {
