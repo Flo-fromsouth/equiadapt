@@ -1,3 +1,17 @@
+<?php
+
+$dsn = 'mysql:host=localhost;dbname=equiadapt';
+$user = 'root';
+$pass = '';
+$pdo = new PDO($dsn, $user, $pass);
+//requêter les informations sur la table "contact":
+$sql = "SELECT * FROM services";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+//afficher sous la forme d'un tableau html les résultats:
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +20,11 @@ include 'header.php';
 include 'container_navbar.php';
 ?>
 
+
 <body>
     <div class="container">
         <div class="rectangle_orange">
-            <div class="accroche">Séjours adaptés et tarifs</div>
+            <div class="accroche">Tarifs et séjours adaptés</div>
         </div>
         <div class="rectangle_bordeaux_tarifs">
             <div class="image_page_tarifs">
@@ -27,17 +42,28 @@ include 'container_navbar.php';
                 </div>
             </div>
             <div class="tarifs_texte">
-                PARTICULIERS:<br>***<br><br>
-                Séance individuelle: 60 euros.<br>
-                Forfait mensuel ( 2 séances par mois ): 100 euros.<br>
-                Forfait 1 séance par semaine: 150 euros.<br>
-                ( location structure et cheval compris ).<br><br>
+                PARTICULIERS:<br><br>
+                <table style="width:60%; text-align: left; position: relative; left: 15%;">
+                    <tr>
+                        <th>Prestations :</th>
+                        <th>prix</th>
+                    </tr>
+                    <?php
+
+                    foreach ($result as $row) {
+
+                        echo '<tr>';
+                        echo '<td>' . $row['nom'] . '</td>';
+                        echo '<td>' . $row['prix'] . ' ' . '€' . '</td>';
+                        echo '</tr>';
+                    }
+                    ?>
+                </table>
                 <br><br>
-                STRUCTURES: <br>***<br><br>Sur devis<br>
+                STRUCTURES: <br><br>Sur devis<br>
                 N'hésitez pas à me contacter pour toutes informations complémentaires:<br><br>
                 06 60 23 20 50<br>
                 equilibrenaturelsante@gmail.com<br><br>
-
 
             </div>
         </div>

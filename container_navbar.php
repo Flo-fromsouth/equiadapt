@@ -3,13 +3,17 @@
         <div class="bouton_connexion">
             <a href="login.php">connexion</a>
         </div>
-        <div class="icone_tel"><img src="icones/icone_telephone_2.jpg"></div>
-        <div class="tel">06 60 23 20 50</div>
+        <div class="icone_tel"><img src="icones/icone_telephone_2.jpg">
+        </div>
+        <div class="tel">06 60 23 20 50
+        </div>
         <div class="enveloppe"><a href="mailto:equilibrenaturelsante@gmail.com" target="_blank"><img src="icones/enveloppe2.jpg"></a>
         </div>
-        <div class="facebook"><a href="https://www.facebook.com/mediationparlecheval" target="_blank"><img src="icones/logo_facebook_rond.jpg"></a></div>
+        <div class="facebook"><a href="https://www.facebook.com/mediationparlecheval" target="_blank"><img src="icones/logo_facebook_rond.jpg"></a>
+        </div>
         <div class="instagram"><a href="https://www.instagram.com/equitherapielindagarcia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="icones/icone_insta.png"></a></div>
+                <img src="icones/icone_insta.png"></a>
+        </div>
     </div>
     <div class="menu_container">
         <div class="menu_mobile_logo_liste">
@@ -47,7 +51,7 @@
                         <li><a href="equitherapie_why.php">Pourquoi faire de l'équithérapie?</a></li>
                     </ul>
                 </li>
-                <li><a href="tarifs.php">Séjours adaptés<br>& tarifs</a></li>
+                <li><a href="tarifs.php">Tarifs &<br>séjours adaptés</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
         </div>
