@@ -4,7 +4,7 @@ $dsn = 'mysql:host=localhost;dbname=equiadapt';
 $user = 'root';
 $pass = '';
 $pdo = new PDO($dsn, $user, $pass);
-//requêter les informations sur la table "contact":
+//requêter les informations sur la table "services":
 $sql = "SELECT * FROM services";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();

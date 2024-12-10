@@ -22,7 +22,7 @@ include 'header.php';
                 <div class="sous-titre">
                     * * *<br><br>
                     Equitation et médiation équine adaptée pour tous<br>
-                    Ateliers autour des sens, de l’équilibre et de la motricité.<br>
+                    Ateliers autour des sens, de l'équilibre et de la motricité.<br>
                     Ateliers de médiation équine pour les adultes et les enfants.<br>
                     Travail sur la concentration, la communication et les émotions<br>
                     Développement personnel et confiance en soi. <br>
@@ -32,7 +32,7 @@ include 'header.php';
                 </div>
             </div>
         </div>
-        <div class="lieux">Mes secteurs</div>
+        <div class="lieux">Mes secteurs, dans la Haute Garonne et l'Ariège :</div>
         <div class="secteurs">
             <div class="fanthilou">
                 <div class="logo_fanthilou"><img src="Logos/logo_fanthilou.png" alt="fanthilou"></div>

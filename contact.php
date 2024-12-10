@@ -43,7 +43,7 @@ include 'container_navbar.php';
                         <input type="email" id="mail" name="user_mail" /><br><br>
 
                         <label for="message">Message</label><br>
-                        <textarea id="message" name="message" rows="10" cols="60"></textarea><br><br>
+                        <textarea id="message" name="message" rows="10" cols="60" minlength="20" maxlength="500"></textarea><br><br>
                         <input type="submit" id="submitbutton" value="Envoyer"><br>
                 </fieldset>
                 </form>

@@ -11,6 +11,7 @@
     }
 
     .bouton_connexion {
+
         padding-right: 10px;
         padding-top: 20px;
         font-size: medium;
@@ -22,37 +23,39 @@
     }
 
     .infos {
-        background-color: #8F4343;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: stretch;
-        align-content: flex-end;
+        align-content: stretch;
+        background-color: #8F4343;
+        text-align: center;
     }
 
     .icone_tel {
-        padding-top: 15px;
-        margin-right: 10px;
+        padding-top: 10px;
+        margin-right: none;
     }
 
     .tel {
-        padding-top: 20px;
-        margin-right: 40px;
+        padding-top: 10px;
+        margin-right: none;
+        width: none;
     }
 
     .enveloppe {
-        padding-top: 20px;
-        margin-right: 40px;
+        padding-top: 10px;
+        margin-right: none;
     }
 
     .facebook {
-        padding-top: 15px;
-        margin-right: 40px;
+        padding-top: 10px;
+        margin-right: none;
     }
 
     .instagram {
-        padding-top: 15px;
+        padding-top: 10px;
     }
 
     .header {
@@ -63,7 +66,6 @@
     .menu_container {
         width: 100%;
         background-color: white;
-        color: black;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -597,13 +599,20 @@
     }
 
     .bouton_connexion {
-        padding-right: 10px;
+        border: 1px dashed black;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .text_connexion {
+        height: 51px;
+        line-height: 51px;
+        text-align: center;
     }
 
     .bouton_connexion a {
         text-decoration: none;
         color: white;
-        padding-right: 980px;
     }
 
     .infos {
@@ -611,11 +620,20 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: stretch;
-        align-content: flex-end;
+        align-content: stretch;
         padding: 10px;
         padding-right: 20px;
+    }
+
+    .nt_infos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
     }
 
     .icone_tel {
@@ -624,8 +642,17 @@
     }
 
     .tel {
-        padding-top: 20px;
-        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        padding-right: 10px;
+    }
+
+    .numero {
+        width: auto;
     }
 
     .enveloppe {

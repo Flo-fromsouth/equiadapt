@@ -1,11 +1,19 @@
 <?php
 session_start();
-if ($_SESSION['email']) {
-    echo "vous êtes connecté";
+// Vérifier si l'utilisateur est connecté
+if (isset($_SESSION['email'])) {
+    echo "Vous êtes connecté";
+
+    // Connexion à la base de données
     $dsn = 'mysql:host=localhost;dbname=equiadapt';
     $user = 'root';
     $pass = '';
-    $pdo = new PDO($dsn, $user, $pass);
+    try {
+        $pdo = new \PDO($dsn, $user, $pass);
+    } catch (PDOException $e) {
+        echo "Erreur de connexion : " . $e->getMessage();
+        exit();
+    }
     //requêter les informations sur la table "contact":
     $sql = "SELECT * FROM contact";
     $stmt = $pdo->prepare($sql);
@@ -31,8 +39,9 @@ if ($_SESSION['email']) {
         table {
             border-collapse: collapse;
             border-color: #8F4343;
-            width: 100%;
-            margin-left: 15px;
+            width: auto;
+            margin: 15px;
+            text-align: center;
         }
 
         th,

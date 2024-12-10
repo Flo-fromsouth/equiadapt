@@ -12,7 +12,7 @@ if (count($_POST) == 0) { ?>
 // traitement des infos soumises par le formulaire
 else {
     // vérification de l'existence de l'email
-    echo $_POST['email'];
+
     $dsn = 'mysql:host=localhost;dbname=equiadapt';
     $user = 'root';
     $pass = '';
@@ -24,12 +24,11 @@ else {
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     // si l'email existe on vérifie que le mot de passe correspond
-    print_r($user);
-    if (count($user) > 0) {
-        if (password_verify($_POST['password'], $user['password'])) {
-            header('Location: index.php');
-        } else {
-            echo 'mot de passe incorrect';
-        }
+    if ($user && password_verify($_POST['password'], $user['password'])) {
+        $_SESSION['email'] = $user['email']; // Définir la session
+        header('Location: admin/admin.php');
+        exit();
+    } else {
+        echo 'Email ou mot de passe incorrect';
     }
 }

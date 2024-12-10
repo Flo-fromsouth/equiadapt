@@ -24,7 +24,7 @@ include 'container_navbar.php';
                 <div class="titre_what">L'équithérapie,<br>qu'est-ce que c'est?<br><br>***<br></div>
             </div>
             <div class="texte_what">
-                L'équithérapie, ou médiation équine, utilise le cheval comme médiateur thérapeuthique,
+                L'équithérapie, ou médiation équine, utilise le cheval comme médiateur thérapeutique,
                 dans la prise en charge de difficultés psychiques, physiques et émotionnelles.
 
                 L'équithérapie développe et améliore les capacités motrices/physiques, affectives et cognitives,

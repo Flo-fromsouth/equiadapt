@@ -1,20 +1,35 @@
 <div class="header">
     <div class="infos">
         <div class="bouton_connexion">
-            <a href="login.php">connexion</a>
+            <div class="text_connexion">
+                <a href="login.php">CONNEXION</a>
+            </div>
         </div>
-        <div class="icone_tel"><img src="icones/icone_telephone_2.jpg">
-        </div>
-        <div class="tel">06 60 23 20 50
-        </div>
-        <div class="enveloppe"><a href="mailto:equilibrenaturelsante@gmail.com" target="_blank"><img src="icones/enveloppe2.jpg"></a>
-        </div>
-        <div class="facebook"><a href="https://www.facebook.com/mediationparlecheval" target="_blank"><img src="icones/logo_facebook_rond.jpg"></a>
-        </div>
-        <div class="instagram"><a href="https://www.instagram.com/equitherapielindagarcia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="icones/icone_insta.png"></a>
+
+        <div class="nt_infos">
+            <div class="icone_tel">
+                <img src="icones/icone_telephone_2.jpg">
+            </div>
+            <div class="tel">
+                <div class="numero">
+                    06 60 23 20 50
+                </div>
+            </div>
+            <div class="enveloppe">
+                <a href="mailto:equilibrenaturelsante@gmail.com" target="_blank"><img src="icones/enveloppe2.jpg"></a>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com/mediationparlecheval" target="_blank"><img src="icones/logo_facebook_rond.jpg"></a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/equitherapielindagarcia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <img src="icones/icone_insta.png">
+                </a>
+            </div>
         </div>
     </div>
+
+
     <div class="menu_container">
         <div class="menu_mobile_logo_liste">
             <div class="logo" alt="image représentant le logo de l'entreprise"><img src="logos/logo_officiel.jpg" alt="logo"></div>
